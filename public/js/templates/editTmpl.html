@@ -1,0 +1,7 @@
+<div>
+	<select ng-options="product.title for product in products" ng-model="selectedProd"></select>
+	<input ng-model="selectedProd.title">
+	<input ng-model="selectedProd.description">
+	<input ng-model="selectedProd.price">
+	<input type="submit" value="Submit" ng-click="editProd(selectedProd)">	
+</div>

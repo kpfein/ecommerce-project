@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ecommerce</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body ng-app="ecommerceApp">
+	<div class="nav-contain">
+		<div class="nav">
+			<div id="home-btn" ui-sref="home">Home</div>
+			<div id="products-btn" ui-sref="products">Show Products</div>
+			<div id="admin-btn" ui-sref="admin">Admin</div>
+		</div>
+	</div>
+	<div id="clearer"></div>
+
+
+	<ui-view></ui-view>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+  	<script type="text/javascript" src="js/controllers/productsCtrl.js"></script>
+  	<script type="text/javascript" src="js/services/productsService.js"></script>
+  	<script type="text/javascript" src="js/controllers/productsEditCtrl.js"></script>
+
+</body>
+</html>

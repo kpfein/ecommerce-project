@@ -1,0 +1,9 @@
+<h2>Available Products</h2>
+<div class="products-contain">
+	<div class="products" ng-repeat="product in products">
+		<p>{{product.title}}</p>
+		<p>{{product.description}}</p>
+		<p>${{product.price}}</p>
+		<input type="submit" value="Add to Cart" ng-click="">
+	</div>
+</div>
